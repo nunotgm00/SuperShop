@@ -1,12 +1,38 @@
 ﻿using SuperShop.Data.Entities;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace SuperShop.Data
 {
-    public class MockRepository : IRepository
+    public class MockRepository : IProductRepository
     {
         public void AddProduct(Product product)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task CreateAsync(Product entity)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task DeleteAsync(Product entity)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task<bool> ExistAsync(int id)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public IQueryable<Product> GetAll()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task<Product> GetByIdAsync(int id)
         {
             throw new System.NotImplementedException();
         }
@@ -40,6 +66,11 @@ namespace SuperShop.Data
         }
 
         public Task<bool> SaveAllAsync()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Task UpdateAsync(Product entity)
         {
             throw new System.NotImplementedException();
         }
